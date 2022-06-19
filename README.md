@@ -18,5 +18,6 @@ You can find two defined examples.
 ## Documentation
 
 In the documentation you can find some decisions behind the infrastructure's design, and
-the skeletons of the implemented functions.
+the skeletons of the implemented functions. And how the topology's specification.
  - [Documentation](/documentation/cida.md)
+ - [Topology Specification](/documentation/topology_specification)
