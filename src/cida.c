@@ -28,7 +28,7 @@
 #define __CI_ARG_ACTUATION "--actuation="
 
 // Number of available datatypes
-#define __CI_DATATYPES_COUNT ((char) 15)
+#define __CI_DATATYPES_COUNT ((int8_t) 15)
 
 #define __CI_SYNC_MASTER ((char) 0)
 

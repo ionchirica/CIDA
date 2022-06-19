@@ -1,7 +1,7 @@
 #ifndef __UTIL_H
 #define __UTIL_H
 
-#define __CI_UTIL_IGNORE_RANK (-1)
+#define __CI_UTIL_IGNORE_RANK ((int8_t) -1)
 
 void __ci_error(const char* error_message);
 

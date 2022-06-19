@@ -26,3 +26,6 @@ test_*.*
 
 #ignore self dir
 self/*
+/.vs/CIDA/FileContentIndex
+/.vs/CIDA/v17
+/.vs

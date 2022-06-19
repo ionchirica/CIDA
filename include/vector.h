@@ -4,8 +4,8 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-#define INITIAL_CAPACITY 5
-#define GROWTH_FACTOR    2
+#define INITIAL_CAPACITY ((int8_t) 5)
+#define GROWTH_FACTOR	 ((int8_t) 2)
 
 typedef struct
 {

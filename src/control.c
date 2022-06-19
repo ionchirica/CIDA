@@ -184,11 +184,7 @@ __ci_snapshot_process* __ci_algorithm_snapshot(int initiator,
                          __ci_state->incoming_messages_id, n_predecessors);
     if ( count_diff > diff )
     {
-      // get correspondent index of the adjancecy
-      //
-      //
-      //
-      //
+      // get correspondent index of the adjacency
       // channel end????
       int adj_ind = __ci_adj_to_ind(__ci_state->channel_end, predecessors,
                                     n_predecessors);
@@ -243,8 +239,6 @@ void __ci_leave_tree(__ci_shavit_francez_node* node, MPI_Comm* communicator)
 }
 
 /* Termination Detection Algorithm
- *
- *
  * TODO!
  * */
 void __ci_shavit_francez(int rank,
@@ -331,9 +325,9 @@ void __ci_shavit_francez(int rank,
   }
 }
 
-#define __CI_TOK_TAG 0
-#define __CI_LDR_TAG 1
-#define UNDEF        -1
+#define __CI_TOK_TAG ((int8_t) 0)
+#define __CI_LDR_TAG ((int8_t) 1)
+#define UNDEF        ((int8_t) -1)
 
 echo_extinction* election_init( )
 {
