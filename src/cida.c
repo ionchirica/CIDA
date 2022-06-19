@@ -30,7 +30,7 @@
 // Number of available datatypes
 #define __CI_DATATYPES_COUNT ((int8_t) 15)
 
-#define __CI_SYNC_MASTER ((char) 0)
+#define __CI_SYNC_MASTER ((int8_t) 0)
 
 // Nano sleep macro
 #define __CI_NANO_SLEEP(S, NS) \
