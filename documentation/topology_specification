@@ -1,0 +1,51 @@
+Allowed topologies:
+
+ Initiators:
+   i a b c    ==> a*, b*, c*
+   i a        ==> a*
+   i *        ==> { all }*
+
+ Rings:
+   r a e      ==> a  -> b  -> c  -> d  -> e  -> a
+   R a e      ==> a <-> b <-> c <-> d <-> e <-> a
+   
+   r a b c    ==> a  -> b  -> c  -> a
+   R a b c    ==> a <-> b <-> c <-> a
+
+   r a *      ==> a  -> b  -> ...  -> a
+   R a *      ==> a <-> b <-> ... <-> a
+
+
+ Edges:
+   e a e      ==> a  -> e
+   E a e      ==> a <-> e
+
+   e a b c    ==> a  -> b 
+                  a  -> c
+
+   E a b c    ==> a <-> b 
+                  a <-> c
+
+   e a *      ==> a  -> all \ { a }
+   E a *      ==> a <-> all \ { a }
+
+ Clique:
+   C a *     ==> a   <-> all \ { a }
+                 b   <-> all \ { a, b }
+                 c   <-> all \ { a, b, c }
+                     (...)
+                 all <-> all \ { prev }
+
+   C a c     ==> a <-> b
+                 a <-> c
+                 
+                 b <-> c 
+
+   C a c e t ==> a <-> c
+                 a <-> e
+                 a <-> t
+                 
+                 c <-> t
+                 c <-> e
+                 
+                 e <-> t
