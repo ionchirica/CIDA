@@ -12,7 +12,6 @@ The idea behind having two layers is to allow the user of the interface to use t
 You can find two defined examples.
 
  - [Point-To-Point Communication](/documentation/examples.md)
-
  - [Election Algorithm](/documentation/election.md)
 
 ## Documentation
