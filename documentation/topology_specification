@@ -1,4 +1,4 @@
-Allowed topologies:
+Allowed components:
 
  Initiators:
    i a b c    ==> a*, b*, c*
