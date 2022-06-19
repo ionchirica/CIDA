@@ -13,7 +13,7 @@ You can find two defined examples.
 
  - [Point-To-Point Communication](/documentation/examples.md)
 
- - [Election Algorithm](/documentation/examples.md)
+ - [Election Algorithm](/documentation/election.md)
 
 ## Documentation
 
