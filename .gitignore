@@ -1,0 +1,28 @@
+#ignore all
+*
+
+#unignore all directiories
+!/**/
+
+#unignore all extentions
+!*.*
+
+#unignore topologies
+!topologies/*
+
+!obj/
+
+#ignore .o
+**.o
+
+#ignore gcc procompiled header
+**.gch
+
+#ignore valgrind core dumps
+vgcore.*
+
+#ignore test files
+test_*.*
+
+#ignore self dir
+self/*
