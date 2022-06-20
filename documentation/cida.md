@@ -16,7 +16,10 @@
   In CIDA, the available procedures are prefixed by "ci_" (control interface) and sufixed by the designed operation.
 
 #### Conventions
-  By having CIDA work on top of MPI, some architectural decisions were made that are not fail-safe. The available datatypes of the message payload are  
+  By having CIDA work on top of MPI, some architectural decisions were made that are not fail-safe. 
+
+  The available datatypes of the message payload are: <text>**ci\_char**, **ci\_short**, **ci\_int**, **ci\_long**, **ci\_long\_long\_int**, **ci\_long\_long**, **ci\_signed\_char**, **ci\_unsigned\_char**, **ci\_unsigned\_short**, **ci\_unsigned**, **ci\_unsigned\_long**, **ci\_unsigned\_long\_long**, **ci\_float**, **ci\_double**, **ci\_long\_double**, **ci\_wchar**.
+</text>
 
 #### Point-to-Point Communication
 
@@ -27,7 +30,7 @@
 ### Topology
 
   To whomever plans on using this library, should know about the feature to define a network and be should very aware that it's the only way the data flows. The user can define the topology it pleases the most with the following allowed components.
-  The uncapitalized version of a component means the topology is directed and its counter-part, the capitalized version, is the undirected.
+  The uncapitalized version of a component means the edges are directed and its counter-part, the capitalized version, undirected.
 
   ```
     e, E            -- edge
