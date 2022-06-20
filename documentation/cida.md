@@ -280,6 +280,10 @@
 
   Sometimes it's useful to have some sense of synchronization, we can achieve such by having a barrier, telling the process that reaches that routine to wait for all the other processes to do so.
 
+  ```C
+  int ci_barrier( );
+  ```
+
 ### Error Handling
 
   ```
